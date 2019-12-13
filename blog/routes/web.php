@@ -22,3 +22,10 @@ Route::get('/formulario-iniciar', function(){
 Route::get('/formulario-registrar', function(){
     return view('registro-page');
 });
+
+//Route::get('/empleados', 'EmpleadosController@index');
+
+
+//Route::get('/empleados/create', 'EmpleadosController@create');
+
+Route::resource('empleados', 'EmpleadosController');
