@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bienvenida', function(){
+Route::get('/formulario-iniciar', function(){
     return view('landing-page');
+});
+
+Route::get('/formulario-registrar', function(){
+    return view('registro-page');
 });
