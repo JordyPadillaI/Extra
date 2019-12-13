@@ -1,4 +1,4 @@
-Inicio (Despliegue de datos)
+Datos almacenados
 
 <table class="table table-light">
     <thead class="thead-light">
@@ -21,7 +21,19 @@ Inicio (Despliegue de datos)
             <td>{{$empleado->Apellido_Materno}}</td>
             <td>{{$empleado->Correo}}</td>
             <td>{{$empleado->Domicilio}}</td>
-            <td>Editar | Borrar</td>
+            <td>
+
+            <a href="{{url('/empleados/'.$empleado->id.'/edit')}}">
+            Editar
+</a>
+
+            <form method="post" action="{{ url ('/empleados/'.$empleado->id) }}">
+            {{csrf_field() }}
+            {{method_field('DELETE') }}
+            <button type="submit" onclick="return confirm('¿Borrar?');" >Borrar</button>
+
+            </form>
+</td>
         </tr>
         @endforeach
     </tbody>
