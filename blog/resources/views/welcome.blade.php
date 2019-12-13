@@ -88,7 +88,7 @@
 
                 <div class="container">
                 <button type="button" class="btn btn-primary btn-lg" onClick=" window.location.href='/formulario-iniciar' ">Iniciar sesión</button>
-                <button type="button" class="btn btn-secondary btn-lg" onClick=" window.location.href='/formulario-registrar' ">Registrarse</button>
+                <button type="button" class="btn btn-secondary btn-lg" onClick=" window.location.href='/empleados/create' ">Registrarse</button>
                 </div>
 
                 <!--<div class="links">

@@ -18,11 +18,11 @@ Route::get('/', function () {
 //Route::get('/formulario-iniciar', function(){
 //    return view('landing-page');
 //});
-/*
-Route::get('/formulario-registrar', function(){
-    return view('registro-page');
+
+Route::get('/empleados/create', function(){
+    return view('empleados.create');
 });
-*/
+
 //Route::get('/empleados', 'EmpleadosController@index');
 
 
