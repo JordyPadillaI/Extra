@@ -15,42 +15,47 @@
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
-    <form action="{{url('/empleados')}}" method="post">
+    <form action="{{url('/empleados')}}" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputNombre">Nombre(s)</label>
-      <input type="text" class="form-control" id="inputNombre">
-    </div> 
+      <label for="Nombre">Nombre(s)</label>
+      <input type="text" class="form-control" id="Nombre">
+    </div>
+</div> 
     
     <div class="form-row">
-    <div class="form-group col-md">
+    <div class="form-group col-md-3">
       <label for="inputAP">Apellido Paterno</label>
       <input type="text" class="form-control" id="inputAP">
 </div>
     </div>
     <div class="form-row">
-    <div class="form-group col-md">
+    <div class="form-group col-md-3">
       <label for="inputAM">Apellido Materno</label>
       <input type="text" class="form-control" id="inputAM">
     </div>
     </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-3">
       <label for="inputEmail4">Correo Electrónico</label>
       <input type="email" class="form-control" id="inputEmail4">
     </div>
-    <div class="form-group">
+</div>
+    <div class="form-row">
+    <div class="form-group col-md-3">
     <label for="inputAddress">Domicilio</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese calle y número...">
   </div>
+</div>
   <div class="form-row">
-    <div class="form-group col-md-5">
+    <div class="form-group col-md-3">
       <label for="inputCity">Ciudad</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
+</div>
     <div class="form-row">
-    <div class="form-group col-md">
+    <div class="form-group col-md-3">
       <label for="inputState">Estado</label>
       <input type="text" class="form-control" id="inputState">
     </div>
@@ -60,19 +65,12 @@
     </div>-->
 
     </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Recordar
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Registrase</button>
+    <button type="submit" class="btn btn-primary">Registrase</button>
 </form>
       
     </blockquote>
   </div>
+</div>
 </div>
 </div>
 </body>
