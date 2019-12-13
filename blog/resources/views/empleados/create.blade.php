@@ -4,6 +4,7 @@
 
 @section('content')
 <div class="container">
+
 <head>
 <title>Registro</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,6 +12,16 @@
 <!--css-->
 </head>
 <body>
+
+@if(count($errors)>0)
+<div class="alert-danger" role="alert">
+        <ul>
+            @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
 <div class="container-fluid" >
 <div class="col-sm" >
 <div class="card">

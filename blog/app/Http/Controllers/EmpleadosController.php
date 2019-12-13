@@ -40,6 +40,18 @@ class EmpleadosController extends Controller
     {
         //
 
+        $campos=[
+            'Nombre' => 'required|string|max:100',
+            'Apellido_Paterno' => 'required|string|max:100',
+            'Apellido_Materno' => 'required|string|max:100',
+            'Correo' => 'required|email',
+            'Domicilio' => 'required|string|max:100',
+            'Municipio' => 'required|string|max:100',
+            'Estado' => 'required|string|max:100',
+        ];
+        $Mensaje=["required"=>'El :attribute es requerido'];
+        $this -> validate($request, $campos, $Mensaje);
+
         //$datosEmpleado=request()->all();
 
         $datosEmpleado=request()->except('_token');
