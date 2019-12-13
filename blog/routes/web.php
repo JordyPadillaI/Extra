@@ -15,14 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/formulario-iniciar', function(){
-    return view('landing-page');
-});
-
+//Route::get('/formulario-iniciar', function(){
+//    return view('landing-page');
+//});
+/*
 Route::get('/formulario-registrar', function(){
     return view('registro-page');
 });
-
+*/
 //Route::get('/empleados', 'EmpleadosController@index');
 
 

@@ -15,51 +15,52 @@
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
-    <form action="{{url('/empleados')}}" method="post" enctype="multipart/form-data">
+    <form action="{{url('/empleados')}}" method="POST">
     {{ csrf_field() }}
     <div class="form-row">
     <div class="form-group col-md-3">
       <label for="Nombre">Nombre(s)</label>
-      <input type="text" class="form-control" id="Nombre">
+      <input type="text" class="form-control" name="Nombre" id="Nombre">
     </div>
 </div> 
     
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputAP">Apellido Paterno</label>
-      <input type="text" class="form-control" id="inputAP">
+      <label for="ApellidoPaterno">Apellido Paterno</label>
+      <input type="text" class="form-control" name="ApellidoPaterno" id="ApellidoPaterno">
 </div>
     </div>
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputAM">Apellido Materno</label>
-      <input type="text" class="form-control" id="inputAM">
+      <label for="ApellidoMaterno">Apellido Materno</label>
+      <input type="text" class="form-control" name="ApellidoMaterno" id="ApellidoMaterno">
     </div>
     </div>
   <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputEmail4">Correo Electrónico</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <label for="Correo">Correo Electrónico</label>
+      <input type="email" class="form-control" name="Correo" id="Correo">
     </div>
 </div>
     <div class="form-row">
     <div class="form-group col-md-3">
-    <label for="inputAddress">Domicilio</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese calle y número...">
+    <label for="Domicilio">Domicilio</label>
+    <input type="text" class="form-control" name="Domicilio" id="Domicilio" placeholder="Ingrese calle y número...">
   </div>
 </div>
   <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputCity">Ciudad</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="Ciudad">Ciudad</label>
+      <input type="text" class="form-control" name="Ciudad" id="Ciudad">
     </div>
 </div>
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputState">Estado</label>
-      <input type="text" class="form-control" id="inputState">
+      <label for="Estado">Estado</label>
+      <input type="text" class="form-control" name="Estado" id="Estado">
     </div>
-    <!--<div class="form-group col-md-6">
+    <!--
+    <div class="form-group col-md-6">
       <label for="inputPassword4">Contraseña</label>
       <input type="password" class="form-control" id="inputPassword4">
     </div>-->
@@ -75,3 +76,14 @@
 </div>
 </body>
 </html>
+
+<!--
+Seccion para crear empleados
+<form action="{{url('/empleados')}}" method="post">
+
+    {{ csrf_field() }}
+    <label for="Nombre">{{'Nombre'}}</label>
+    <input type="text" name="Nombre" id = "Nombre" value="">
+    <input type="submit" value="Agregar">
+
+</form>-->
