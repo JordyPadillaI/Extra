@@ -26,14 +26,14 @@
     
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="ApellidoPaterno">Apellido Paterno</label>
-      <input type="text" class="form-control" name="ApellidoPaterno" id="ApellidoPaterno">
+      <label for="Apellido Paterno">Apellido Paterno</label>
+      <input type="text" class="form-control" name="Apellido Paterno" id="Apellido Paterno">
 </div>
     </div>
     <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="ApellidoMaterno">Apellido Materno</label>
-      <input type="text" class="form-control" name="ApellidoMaterno" id="ApellidoMaterno">
+      <label for="Apellido Materno">Apellido Materno</label>
+      <input type="text" class="form-control" name="Apellido Materno" id="Apellido Materno">
     </div>
     </div>
   <div class="form-row">
@@ -50,8 +50,8 @@
 </div>
   <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="Ciudad">Ciudad</label>
-      <input type="text" class="form-control" name="Ciudad" id="Ciudad">
+      <label for="Municipio">Municipio</label>
+      <input type="text" class="form-control" name="Municipio" id="Municipio">
     </div>
 </div>
     <div class="form-row">
