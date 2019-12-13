@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 //Route::get('/formulario-iniciar', function(){
@@ -29,3 +29,8 @@ Route::get('/empleados/create', function(){
 //Route::get('/empleados/create', 'EmpleadosController@create');
 
 Route::resource('empleados', 'EmpleadosController');
+
+Auth::routes(['register'=>false, 'reset'=>false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+

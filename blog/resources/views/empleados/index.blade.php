@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+
 Datos almacenados
 
 <table class="table table-light">
@@ -38,3 +44,5 @@ Datos almacenados
         @endforeach
     </tbody>
 </table>
+</div>
+@endsection
